@@ -27,6 +27,8 @@ dependencies:
   # flutter_web_plugins:
   #   sdk: flutter
 
+  http:
+
   webview_flutter: ^2.0.9
 
   cupertino_icons: ^1.0.2

@@ -19,4 +19,17 @@ class Story {
       required this.score,
       required this.type,
       required this.url});
+
+  factory Story.fromJson(Map<String, dynamic> json) {
+    return Story(
+        by: json['by'],
+        time: json['time'],
+        title: json['title'],
+        descendants: json['descendants'],
+        id: json['id'],
+        kids: json['kids'],
+        score: json['score'],
+        type: json['type'],
+        url: json['url']);
+  }
 }
