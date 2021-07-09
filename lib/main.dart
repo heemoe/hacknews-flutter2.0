@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hacknews_flut/pages/detail.dart';
 import 'components/layout.dart';
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+// import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 void main() {
   configureApp();
@@ -9,7 +9,7 @@ void main() {
 }
 
 void configureApp() {
-  setUrlStrategy(HashUrlStrategy());
+  // setUrlStrategy(HashUrlStrategy());
 }
 
 class App extends StatelessWidget {

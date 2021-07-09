@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hacknews_flut/pages/detail.dart';
+import 'package:hacknews_flut/components/articleRow.dart';
+import 'package:hacknews_flut/model/story.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -27,12 +28,17 @@ class _Home extends State {
   }
 
   Widget _buildRow(String title, String url) {
-    return ListTile(
-      title: Text(title),
-      onTap: () => {
-        Navigator.pushNamed(context, '/detail',
-            arguments: DetailArguments(title, url))
-      },
+    return ArticleRow(
+      item: Story(
+          by: 'hee',
+          id: 23,
+          time: 23333,
+          title: '666',
+          score: 23,
+          descendants: 23,
+          url: url,
+          kids: [23],
+          type: 'story'),
     );
   }
 
